@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-00:  #f8f8f8;
+    --color-01: #000000;
+    --color-02: #fefae0;
+    --color-03: #E9EDC9;
+    --color-04: #c1cc9d;
+    --color-05: #D4A373;
+
+    --font-00: "Montserrat", sans-serif;
+
+}
+
+*{
+    font-family: var(--font-00);
+    font-style: normal;
+    color: var(--color-01);
+}
+
+main {
+    margin-top: 50px;
+}
+
+.cabeca{
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-02);
+}
+
+.cabeca_logo{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-00);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.cabeca_logo img {
+    height: 30px;
+    padding: 10px;
+}
+
+.cabeca_nav li{
+    display: inline;
+    margin-right: 20px;
+    
+    font-family: var(--font-00);
+    font-weight: 500;
+}
+
+.cabeca_nav a:hover{
+    color: var(--color-05);
+}
+
+
+.card {
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    gap: .9rem;
+    justify-content: center;
+}
+
+.card img {
+    height: 50%;
+    border-radius: 8px;
+}
+
+.card li {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    background-color: var(--color-00);
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+.card p {
+    font-size: .8rem;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card a {
+    display: inline-block;
+    width: 90px;
+    padding: 10px;
+    background-color: var(--color-04);
+    color: var(--color-01);
+    font-weight: 500;
+}
+
+.card a:hover {
+    background-color: var(--color-03);
+    color: var(--color-01);
+}
+
+#economia {
+    background-color: var(--color-03);
+    height: 50%;
+    padding-bottom: 80px;
+}
+
+.fim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color-01); 
+}
+
+.fim span, .fim p {
+    font-family: var(--font-00);
+    font-size: .9rem;
+    color: var(--color-00);
+}
+
+
+.titulo_01 {
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    padding: 20px 10px;
+}
+
+
+#esporte {
+    background-color: var(--color-05);
+    height: 50%;
+    padding-bottom: 80px;
+}
+
+#outros {
+    background-color: var(--color-03);
+    height: 50%;
+    padding-bottom: 80px;
+}

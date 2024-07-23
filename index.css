@@ -1,42 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --color-00:  #f8f8f8;
-    --color-01: #000000;
-    --color-02: #fefae0;
-    --color-03: #E9EDC9;
-    --color-04: #c1cc9d;
-    --color-05: #D4A373;
+    --color-bg: #f4f4f4; /* fnd geral */
+    --color-text: #333; /* Cor do txt */
+    --color-primary: #000000; /* Cor principal */
+    --color-secondary: #808088; /* Cor secundária */
+    --color-accent: #706e6e; /* Cor de destaque */
 
-    --font-00: "Montserrat", sans-serif;
+    --font-family: "Montserrat", sans-serif;
 
+    /* Novas cores para as seções */
+    --economia-bg: #e9ecef; /* economia */
+    --esporte-bg: #d4edda; /* esporte */
+    --saude-bg: #f8d7da; /*  saúde */
+    --tecnologia-bg: #d1ecf1; /*  tecnologia */
 }
 
-*{
-    font-family: var(--font-00);
+* {
+    font-family: var(--font-family);
     font-style: normal;
-    color: var(--color-01);
+    color: var(--color-text);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 20px;
 }
 
 main {
     margin-top: 50px;
 }
 
-.cabeca{
+.cabeca {
     position: fixed;
     top: 0;
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-02);
+    background-color: var(--color-primary);
+    color: white;
 }
 
-.cabeca_logo{
+.cabeca_logo {
     display: flex;
     align-items: center;
-    font-family: var(--font-00);
     font-size: 1rem;
     font-weight: 600;
 }
@@ -46,18 +55,24 @@ main {
     padding: 10px;
 }
 
-.cabeca_nav li{
+.cabeca_logo span {
+    color:  white;
+}
+
+.cabeca_nav li {
     display: inline;
     margin-right: 20px;
-    
-    font-family: var(--font-00);
     font-weight: 500;
 }
 
-.cabeca_nav a:hover{
-    color: var(--color-05);
+.cabeca_nav a {
+    color: white;
+    text-decoration: none;
 }
 
+.cabeca_nav a:hover {
+    color: var(--color-accent);
+}
 
 .card {
     display: flex;
@@ -76,11 +91,11 @@ main {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-
-    background-color: var(--color-00);
+    background-color: var(--color-bg);
     padding: 10px;
     width: 250px;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card p {
@@ -96,19 +111,35 @@ main {
     display: inline-block;
     width: 90px;
     padding: 10px;
-    background-color: var(--color-04);
-    color: var(--color-01);
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    text-decoration: none;
     font-weight: 500;
+    border-radius: 4px;
 }
 
 .card a:hover {
-    background-color: var(--color-03);
-    color: var(--color-01);
+    background-color: var(--color-accent);
 }
 
-#economia {
-    background-color: var(--color-03);
-    height: 50%;
+.economia {
+    background-color: var(--economia-bg);
+    padding-bottom: 80px;
+}
+
+.esporte {
+    background-color: var(--esporte-bg);
+    padding-bottom: 80px;
+}
+
+.saude {
+    background-color: var(--saude-bg);
+    padding-bottom: 80px;
+}
+
+.tecnologia {
+    background-color: var(--tecnologia-bg);
     padding-bottom: 80px;
 }
 
@@ -117,32 +148,6 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    background-color: var(--color-01); 
-}
-
-.fim span, .fim p {
-    font-family: var(--font-00);
-    font-size: .9rem;
-    color: var(--color-00);
-}
-
-
-.titulo_01 {
-    font-size: 2.5rem;
-    font-weight: 600;
-
-    padding: 20px 10px;
-}
-
-
-#esporte {
-    background-color: var(--color-05);
-    height: 50%;
-    padding-bottom: 80px;
-}
-
-#outros {
-    background-color: var(--color-03);
-    height: 50%;
-    padding-bottom: 80px;
+    background-color: var(--color-secondary);
+    color: white;
 }
